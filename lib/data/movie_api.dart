@@ -5,7 +5,7 @@ import 'package:real_rover/features/models/movie.dart';
 
 class MovieApi {
   final String baseUrl = 'https://api.themoviedb.org/3';
-  final String apiKey = '7955b9678a73713d05bb7ca57a6ab56e';
+  final String apiKey = '7955b967a73713d05b7ca57a6ab6';
 
   Future<List<Movie>> fetchMovies() async {
     final response = await http.get(Uri.parse('$baseUrl/discover/movie?api_key=$apiKey'));
@@ -18,5 +18,3 @@ class MovieApi {
     }
   }
 }
-
-//https://api.themoviedb.org/3/discover/movie?api_key=7955b9678a73713d05bb7ca57a6ab56e
